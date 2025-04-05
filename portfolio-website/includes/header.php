@@ -1,6 +1,13 @@
 <?php
 session_start();
-require 'config.php';
+require __DIR__.'/config.php';
+
+// Verify database connection
+try {
+    $pdo->query('SELECT 1');
+} catch (PDOException $e) {
+    die("Database connection failed: " . $e->getMessage());
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
