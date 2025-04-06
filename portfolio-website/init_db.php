@@ -30,10 +30,14 @@ INSERT OR IGNORE INTO pages (page_name, content) VALUES
 
 -- Insert default design values (using SQLite's INSERT OR IGNORE)
 INSERT OR IGNORE INTO designs (theme_name, value) VALUES
-('primary_color', '#3b82f6'),
-('secondary_color', '#1e40af'),
+('primary_color', '#000000'),
+('secondary_color', '#4f46e5'),
+('accent_color', '#f59e0b'),
 ('font_family', '\"Inter\", sans-serif'),
-('max_width', '1200px');
+('max_width', '1200px'),
+('background_color', '#ffffff'),
+('text_color', '#1e293b'),
+('link_hover', '#6366f1');
 ";
 
 try {
