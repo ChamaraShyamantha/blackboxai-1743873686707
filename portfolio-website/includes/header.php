@@ -21,17 +21,17 @@ try {
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body class="bg-gray-50 font-sans">
-    <header class="bg-white shadow-sm">
-        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="/" class="text-2xl font-bold text-primary">MyPortfolio</a>
-            <div class="space-x-6">
-                <a href="/about.php" class="hover:text-primary transition">About</a>
-                <a href="/portfolio.php" class="hover:text-primary transition">Portfolio</a>
-                <a href="/contact.php" class="hover:text-primary transition">Contact</a>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="/" class="text-2xl font-bold">MyPortfolio</a>
+            <div class="nav-links">
+                <a href="/about.php" class="nav-link">About</a>
+                <a href="/portfolio.php" class="nav-link">Work</a>
+                <a href="/contact.php" class="nav-link">Contact</a>
                 <?php if(isset($_SESSION['loggedin'])): ?>
-                    <a href="/dashboard" class="hover:text-primary transition">Dashboard</a>
+                    <a href="/dashboard" class="nav-link">Dashboard</a>
                 <?php endif; ?>
             </div>
         </nav>
     </header>
-    <main>
+    <main class="main-content">
